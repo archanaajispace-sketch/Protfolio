@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Archana Aji | Web Developer</title>
+<style>
+:root{--bg:#faf8f5;--surface:#fff;--text:#1f2430;--muted:#5d6577;--accent:#c2410c;--accent-soft:#fde8dc;--line:#e6e1d9;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14161c;--surface:#1c1f27;--text:#eceef3;--muted:#a1a8b8;--accent:#fb923c;--accent-soft:#3a2417;--line:#2c303b;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#14161c;--surface:#1c1f27;--text:#eceef3;--muted:#a1a8b8;--accent:#fb923c;--accent-soft:#3a2417;--line:#2c303b;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
+nav{display:flex;gap:18px;flex-wrap:wrap;padding:20px 0;font-size:14px}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--accent)}
+header.hero{padding:48px 0 40px}
+.tag{display:inline-block;background:var(--accent-soft);color:var(--accent);padding:4px 12px;border-radius:99px;font-size:13px;font-weight:600}
+h1{font-size:clamp(2.2rem,7vw,3.6rem);line-height:1.1;margin:16px 0 12px;letter-spacing:-.02em}
+.lead{font-size:1.15rem;color:var(--muted);max-width:620px;margin:0 0 24px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:11px 20px;border-radius:10px;text-decoration:none;font-weight:600;font-size:15px;border:1px solid var(--accent)}
+.btn.p{background:var(--accent);color:#fff}
+.btn.s{color:var(--accent)}
+section{padding:36px 0;border-top:1px solid var(--line)}
+h2{font-size:1.5rem;margin:0 0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card h3{margin:0 0 6px;font-size:1.1rem}
+.card p{margin:0 0 12px;color:var(--muted);font-size:15px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{background:var(--accent-soft);color:var(--accent);padding:3px 10px;border-radius:99px;font-size:12.5px;font-weight:600}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.skills h3{font-size:.95rem;margin:0 0 8px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.item{margin-bottom:18px}
+.item b{display:block}
+.item span{color:var(--muted);font-size:14px}
+footer{padding:36px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav>
+
+<header class="hero">
+<span class="tag">Open to web developer roles</span>
+<h1>Hi, I’m Archana Aji.</h1>
+<p class="lead">A fresher web developer who builds responsive websites and cross-platform apps, with a growing interest in cyber security.</p>
+<div class="btns">
+<a class="btn p" href="#projects">View my work</a>
+<a class="btn s" href="mailto:archanaajispace@gmail.com">Get in touch</a>
+</div>
+</header>
+
+<section id="about">
+<h2>About me</h2>
+<p>I completed my Bachelor of Computer Applications at Mahatma Gandhi University (2023–2026). I enjoy turning ideas into working products, from the HTML and CSS on the screen to the PHP, MySQL and Firebase behind it. I’m currently doing a cyber security internship with Bleep Education (IIT Hyderabad), which keeps security in mind as I build.</p>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="grid">
+<div class="card">
+<h3>Job Application Tracker</h3>
+<p>A React app for tracking job applications, with sign up and login, protected pages, filters and search, and live remote job search from a public API. Each user’s data is private in Firestore.</p>
+<div class="chips"><span class="chip">React</span><span class="chip">Vite</span><span class="chip">Firebase Auth</span><span class="chip">Firestore</span><span class="chip">REST API</span></div>
+<p style="margin:12px 0 0"><a href="https://archanaajispace-sketch.github.io/jobtracker/">Live demo →</a> &nbsp;·&nbsp; <a href="https://github.com/archanaajispace-sketch/jobtracker">Source code →</a></p>
+</div>
+<div class="card">
+<h3>LitVerse</h3>
+<p>A cross-platform literature community app where readers share posts, comment, like and bookmark, with secure user sign-in.</p>
+<div class="chips"><span class="chip">Flutter</span><span class="chip">Firebase</span><span class="chip">Authentication</span></div>
+</div>
+<div class="card">
+<h3>StoryCraft</h3>
+<p>A web app that generates short stories from stored templates by genre and character gender. It has user and admin login, plus story editing and saving.</p>
+<div class="chips"><span class="chip">PHP</span><span class="chip">MySQL</span><span class="chip">HTML/CSS</span><span class="chip">JavaScript</span></div>
+</div>
+<div class="card">
+<h3>Wedding Invitation Website</h3>
+<p>A responsive invitation site built with plain HTML, CSS and JavaScript, hosted from my GitHub.</p>
+<div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div>
+</div>
+<div class="card">
+<h3>Security Recon Toolkit</h3>
+<p>Reconnaissance practice on Kali Linux: subdomain discovery, DNS probing, web crawling and vulnerability scanning, chained into one workflow.</p>
+<div class="chips"><span class="chip">Kali Linux</span><span class="chip">Subfinder</span><span class="chip">Katana</span><span class="chip">Nuclei</span></div>
+</div>
+</div>
+<p style="margin-top:18px">More code on <a href="https://github.com/archanaajispace-sketch">GitHub</a>.</p>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills">
+<div><h3>Front end</h3><div class="chips"><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span><span class="chip">React</span><span class="chip">Responsive design</span></div></div>
+<div><h3>Back end</h3><div class="chips"><span class="chip">PHP</span><span class="chip">MySQL</span><span class="chip">Firebase</span><span class="chip">.NET basics</span></div></div>
+<div><h3>Apps and cloud</h3><div class="chips"><span class="chip">Flutter</span><span class="chip">Cloud computing</span></div></div>
+<div><h3>Tools</h3><div class="chips"><span class="chip">Git and GitHub</span><span class="chip">VS Code</span><span class="chip">WAMP</span><span class="chip">Excel</span></div></div>
+<div><h3>Security</h3><div class="chips"><span class="chip">Kali Linux</span><span class="chip">Web reconnaissance</span><span class="chip">Vulnerability scanning</span></div></div>
+</div>
+</section>
+
+<section id="experience">
+<h2>Experience and education</h2>
+<div class="item"><b>Cyber Security Intern</b><span>Bleep Education, IIT Hyderabad (ongoing)</span></div>
+<div class="item"><b>App Development Intern</b><span>3-month internship (ongoing)</span></div>
+<div class="item"><b>Flutter Intern</b><span>ICT Academy, Technopark Trivandrum · 1 month</span></div>
+<div class="item"><b>Cloud Computing Intern</b><span>IBM via Coursera, Government of Kerala</span></div>
+<div class="item"><b>Bachelor of Computer Applications</b><span>Mahatma Gandhi University · 2023–2026</span></div>
+</section>
+
+<section id="contact">
+<h2>Let’s work together</h2>
+<p>I’m looking for a junior web developer role where I can keep learning and ship real products.</p>
+<div class="btns">
+<a class="btn p" href="mailto:archanaajispace@gmail.com">archanaajispace@gmail.com</a>
+<a class="btn s" href="https://www.linkedin.com/in/archanaaji">LinkedIn</a>
+<a class="btn s" href="https://github.com/archanaajispace-sketch">GitHub</a>
+</div>
+</section>
+
+<footer>© Archana Aji · Based in Dubai, UAE and Kerala, India</footer>
+</div>
+</body>
+</html>
